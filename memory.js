@@ -22,8 +22,8 @@ function shuffle(array) {
 }
 class Memory{
     constructor(cardList) {
-
-        this.cardList = cardList
+        this.pogingen = 0;
+        this.cardList = cardList;
         this.selectedCard = false;
         this.matches = 0;
         this.unlock = true;
@@ -66,11 +66,13 @@ class Memory{
             if (this.selectedCard[0] === card[0]) {
                 this.matches += 1;
                 if (this.matches === this.cardList.length){
-                    console.log("you win")
+                    window.open("win.html", "_self");
                 }
                 this.unlock = true;
                 this.selectedCard = false;
             } else {
+                this.pogingen += 1;
+                document.getElementById('pogingen').innerText = this.pogingen+" pogingen";
                 await delay(1000);
                 document.getElementById('memory').children[card[3]].children[0].style.display = "none";
                 document.getElementById('memory').children[this.selectedCard[3]].children[0].style.display = "none";
@@ -80,5 +82,4 @@ class Memory{
         }
     }
 }
-let mem = new Memory(ok)
-
+let mem = new Memory(ok);

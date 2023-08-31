@@ -1,28 +1,25 @@
 class RebusWord{
     constructor(word, imagePath) {
         this.rebus = document.getElementById("rebus");
+        let content = document.createElement('div');
 
         // background image
         let div = document.createElement('div');
         div.style.backgroundImage = "url('"+imagePath+"')";
         div.style.backgroundSize = "contain";
-        div.style.width = "140px";
-        div.style.height = "140px";
-        this.rebus.appendChild(div);
+        content.appendChild(div);
 
         // word input field
         let input = document.createElement('input');
         input.classList.add('rebusInput');
-        this.rebus.appendChild(input);
+        content.appendChild(input);
+
+        this.rebus.appendChild(content)
     }
 }
 class Rebus{
     constructor(wordList){
-        this.rebus = document.getElementById("rebus");
-        this.result = document.createElement('p');
-        this.result.style.fontSize = "30px";
-        this.result.setAttribute("id", "result");
-        this.rebus.appendChild(this.result)
+        this.game = document.getElementById("game");
         this.wordList = wordList;
         this.rebusWordList = [];
         for (let i = 0; i < wordList.length; i++){
@@ -33,7 +30,7 @@ class Rebus{
         let submit = document.createElement('input');
         submit.type = "submit";
         submit.addEventListener('click', ()=>{rebus.submit()});
-        this.rebus.appendChild(submit);
+        this.game.appendChild(submit);
     }
     submit(){
         let answerCheck = true;
@@ -46,6 +43,7 @@ class Rebus{
         if (answerCheck){
             document.getElementById('result').innerText = "je hebt alles goed";
             document.getElementById('result').style.color = "limegreen";
+            window.open("win.html", "_self");
         }else {
             document.getElementById('result').innerText = "je hebt nog niet alles goed";
             document.getElementById('result').style.color = "red";
@@ -53,4 +51,4 @@ class Rebus{
     }
 
 }
-let rebus = new Rebus([["appel", 'images/apple.png'], ["peer", 'images/pear.png'], ["aardbei", 'images/strawberry.gif']]);
+let rebus = new Rebus([["appel", 'images/apple.png'], ["peer", 'images/pear.png'], ["aardbei", 'images/strawberry.gif'], ["avocado", 'images/avocado.png'], ["kers", 'images/cherry.png']]);
