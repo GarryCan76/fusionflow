@@ -41,12 +41,12 @@ class Rebus{
             }
         }
         if (answerCheck){
-            document.getElementById('result').innerText = "je hebt alles goed";
-            document.getElementById('result').style.color = "limegreen";
+            document.getElementById('pogingen').innerText = "je hebt alles goed";
+            document.getElementById('pogingen').style.color = "limegreen";
             window.open("win.html", "_self");
         }else {
-            document.getElementById('result').innerText = "je hebt nog niet alles goed";
-            document.getElementById('result').style.color = "red";
+            document.getElementById('pogingen').innerText = "je hebt nog niet alles goed";
+            document.getElementById('pogingen').style.color = "red";
         }
     }
 
