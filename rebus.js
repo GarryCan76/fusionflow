@@ -43,7 +43,7 @@ class Rebus{
         if (answerCheck){
             document.getElementById('pogingen').innerText = "je hebt alles goed";
             document.getElementById('pogingen').style.color = "limegreen";
-            window.open("win.html", "_self");
+            window.open("index.html", "_self");
         }else {
             document.getElementById('pogingen').innerText = "je hebt nog niet alles goed";
             document.getElementById('pogingen').style.color = "red";
@@ -51,4 +51,4 @@ class Rebus{
     }
 
 }
-let rebus = new Rebus([["appel", 'images/apple.png'], ["peer", 'images/pear.png'], ["aardbei", 'images/strawberry.gif'], ["avocado", 'images/avocado.png'], ["kers", 'images/cherry.png']]);
+let rebus = new Rebus([["h", 'images/SignH.png'], ["a", 'images/SignA.png'], ["a", 'images/SignA.png'], ["r", 'images/SignR.png'], ["d", 'images/SignD.png']]);

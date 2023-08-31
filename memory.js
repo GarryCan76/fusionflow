@@ -1,5 +1,5 @@
-let ok = [["appel", 'images/apple.png'], ["peer", 'images/pear.png'], ["kers", 'images/cherry.png'], ["avocado", 'images/avocado.png'],
-    ["watermeloen", 'images/watermelon.png'], ["aardbei", 'images/strawberry.gif']];
+let ok = [["A", 'images/SignA.png'], ["B", 'images/SignB.png'], ["C", 'images/SignC.png'], ["D", 'images/SignD.png'],
+    ["E", 'images/SignE.png'], ["F", 'images/SignF.png']];
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -66,7 +66,7 @@ class Memory{
             if (this.selectedCard[0] === card[0]) {
                 this.matches += 1;
                 if (this.matches === this.cardList.length){
-                    window.open("win.html", "_self");
+                    window.open("index.html", "_self");
                 }
                 this.unlock = true;
                 this.selectedCard = false;
