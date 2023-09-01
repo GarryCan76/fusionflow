@@ -1,3 +1,7 @@
+*{
+    /*border: 1px black solid;*/
+}
+
 body{
     background-color: white;
     margin: 0;
@@ -16,22 +20,23 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 60%;
+    max-height: 30%;
     width: 100%;
+    margin: 2%;
 }
 #learnMore{
     display: flex;
     justify-content: center;
     align-items: end;
 
-    /*background-image: url("/images/gebarentaal3.png");*/
+    background-image: url("/images/gebarentaal3.png");
     background-position: center;
     background-size: contain;
     background-size: cover;
 
     border-radius: 10%;
-    aspect-ratio: 1 / 1;
-    width: 65%;
+    width: 60%;
+    height: 20%;
     align-self: center;
 }
 #learnMoreButton{
@@ -65,9 +70,9 @@ header{
     border-radius: 20%;
     background-color: #009a0e;
     box-shadow: rgb(1, 117, 15) 0.2em 0.2em, 0.2em 0.2em;
-    min-width: 40%;
+    min-width: 30%;
     margin: 3%;
-    height: 35%;
+    height: 20%;
 }
 
 footer{

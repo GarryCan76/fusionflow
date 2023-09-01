@@ -51,4 +51,4 @@ class Rebus{
     }
 
 }
-let rebus = new Rebus([["h", 'images/SignH.png'], ["a", 'images/SignA.png'], ["a", 'images/SignA.png'], ["r", 'images/SignR.png'], ["d", 'images/SignD.png']]);
+let rebus = new Rebus([["b", 'images/SignB.png'], ["a", 'images/SignA.png'], ["a", 'images/SignA.png'], ["r", 'images/SignR.png'], ["d", 'images/SignD.png']]);

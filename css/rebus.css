@@ -15,7 +15,7 @@ header{
     flex-direction: row;
     height: 5%;
     width: 100%;
-    background-color: royalblue;
+    background-color: #13b600;
 }
 #home{
     height: 100%;
@@ -23,7 +23,7 @@ header{
     background-color: white;
 }
 #game{
-    background-color: darkseagreen;
+    background-color: #ffffff;
     height: 90%;
 }
 #rebus{
@@ -46,7 +46,7 @@ header{
     min-height: 10%;
     max-height: 40%;
     margin: 2%;
-    background-color: deepskyblue;
+    background-color: #21a221;
 
 }
 #result{

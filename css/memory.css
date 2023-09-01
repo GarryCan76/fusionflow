@@ -46,7 +46,6 @@ header{
 }
 #card > *{
     display: none;
-    background-size: contain;
     background-position: center;
     background-size: contain;
     background-size: cover;
